@@ -70,7 +70,7 @@ function Landing(props) {
                                             <td className="p-2">
                                                 {editIndex === index ? (<input className="border border-black bg-transparent p-1 rounded w-full lg:w-96" value={editText} onChange={(e) => setEditText(e.target.value)} />) : (item)} </td>
                                             <td className="p-2">
-                                                {editIndex === index ? (<button className="bg-green-600 text-white px-2 py-1 rounded mx-2" onClick={saveEdit}><FontAwesomeIcon icon={faFloppyDisk} /></button>) :
+                                                {editIndex === index ? (<button className="bg-green-600 text-white px-2 py-1 rounded mx-2 my-1" onClick={saveEdit}><FontAwesomeIcon icon={faFloppyDisk} /></button>) :
                                                     (<button className="text-white px-2 py-1 rounded my-1 mx-2" onClick={() => handleEdit(index)} style={{ backgroundColor: "blue" }}>
                                                         <FontAwesomeIcon icon={faPenToSquare} /></button>)}
                                                 <button className="text-white px-2 py-1 rounded" onClick={() => handleDel(index)} style={{ backgroundColor: "red" }}><FontAwesomeIcon icon={faTrashCan} /></button>
